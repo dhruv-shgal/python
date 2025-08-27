@@ -1,5 +1,9 @@
 n=int(input("enter the side of square"))
-for i in range(n,0,-1):
+temp =0
+for i in range(n):
     for j in range(i):
-        print("*", end="")
+        temp=temp+1
+        print(temp, end=" ")
     print()    
+
+       
