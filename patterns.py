@@ -47,12 +47,22 @@ n=int(input("enter the side of square"))
 #             print(" ",end="")
 #     print()
 
-for i in range(1,n+1):
-    for j in range(n-i):
+# for i in range(1,n+1):
+#     for j in range(n-i):
+#         print(" ",end="")
+#     for k in range(i):
+#         if k==0 or k==i-1 or i==n:
+#             print("*",end="")
+#         else:
+#             print(" ",end="")
+#     print()     
+
+for i in range(n):
+
+    for j in range(n-i-1):
         print(" ",end="")
-    for k in range(i):
-        if k==0 or k==i-1 or i==n:
-            print("*",end="")
-        else:
-            print(" ",end="")
-    print()     
+    for k in range(1,i+1):
+        print(k,end=" ")
+    
+       
+    print()        
