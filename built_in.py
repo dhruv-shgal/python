@@ -57,11 +57,35 @@
 # d=2
 # print(rotate_array(arr,d))
 
-def merge_dict(keys, values,main):
-    merged_dict = {**keys, **values,**main}
-    return merged_dict
+# def merge_dict(keys, values,main):
+#     merged_dict = {**keys, **values,**main}
+#     return merged_dict
 
-keys = {'a': 1, 'b': 2}
-values = {'c': 3, 'd': 4}
-main={'e': 5, 'f': 6}
-print(merge_dict(keys, values,main))
+# keys = {'a': 1, 'b': 2}
+# values = {'c': 3, 'd': 4}
+# main={'e': 5, 'f': 6}
+# print(merge_dict(keys, values,main))
+
+# def word_freq_count(lstr1):
+    
+#     word_count={}
+#     for word in lstr1:
+#         word=word.lower()
+
+#         if word in word_count:
+#             word_count[word]+=1
+#         else:
+#             word_count[word]=1
+#     return word_count
+
+
+
+# lstr1=['hello','world', 'hello']
+# print(word_freq_count(lstr1))
+
+def palindromic_tuplk(tup1):
+    return tup1==tuple(reversed(tup1))
+
+
+tup=(1, 2, 3, 4, 5)
+print(palindromic_tuplk(tup))
