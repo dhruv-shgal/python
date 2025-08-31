@@ -83,9 +83,33 @@
 # lstr1=['hello','world', 'hello']
 # print(word_freq_count(lstr1))
 
-def palindromic_tuplk(tup1):
-    return tup1==tuple(reversed(tup1))
+# def palindromic_tuplk(tup1):
+#     return tup1==tuple(reversed(tup1))
 
 
-tup=(1, 2, 3, 4, 5)
-print(palindromic_tuplk(tup))
+# tup=(1, 2, 3, 4, 5)
+# print(palindromic_tuplk(tup))
+
+# def merge_dicts_with_overlapping_keys(dicts):
+#     merged={}
+
+#     for d in dicts:
+#         for key,value in d.items():
+#             if key in merged:
+#                 merged[key]+=value
+#             else:
+#                 merged[key]=value
+#     return merged
+
+
+
+# dicts=[{'a': 1, 'b': 2}, {'b': 3, 'c': 4}, {'c': 5, 'd': 6}]
+# print(merge_dicts_with_overlapping_keys(dicts))
+# for d in dicts:
+#     print(d.items())
+def is_subset(lst1, lst2):
+    return set(lst1).issubset(set(lst2))
+
+lst1 = [1, 2, 3]
+lst2 = [1, 2, 3, 4, 5]
+print(is_subset(lst1, lst2))
