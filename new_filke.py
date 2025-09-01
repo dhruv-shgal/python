@@ -53,6 +53,8 @@ def gcd(n, m):
 
     
     while m != 0:
-        n, m = m, n % m
+        temp = n % m   # store the remainder
+        n = m          # assign old m to n
+        m = temp
     return n
-
+print(gcd(48,18))  # Output: 6
