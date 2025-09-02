@@ -55,13 +55,32 @@
 # s="Hello, World!"
 # print(remove_duplicates(s))
 
-def no_of_consonants(str1):
-    str1=str1.lower()
-    str1=str1.replace(" ","")
-    count=0
-    for char in str1:
-        if char not in 'aeiou':
-            count += 1
-    return count
-str1="Python Programming"
-print(no_of_consonants(str1))
+# def no_of_consonants(str1):
+#     str1=str1.lower()
+#     str1=str1.replace(" ","")
+#     count=0
+#     for char in str1:
+#         if char not in 'aeiou':
+#             count += 1
+#     return count
+# str1="Python Programming"
+# print(no_of_consonants(str1))
+
+# def is_anagram(s, t):
+#     s = s.replace(" ", "").lower()
+#     t = t.replace(" ", "").lower()
+#     return sorted(s) == sorted(t)
+# s = "car"
+# t = "rat"
+# print(is_anagram(s, t))
+
+def is_subsequence(s, t):
+    i,j=0,0
+    while i<len(s) and j<len(t):
+        if s[i]==t[j]:
+            i+=1
+        j+=1
+    return i==len(s)
+s = "abcde"
+t = "aec"
+print(is_subsequence(s, t))
