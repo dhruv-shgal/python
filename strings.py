@@ -36,10 +36,21 @@
 # s=s.lower()
 # print(palindrome(s))
 
-def count_words(s):
-#     s="".join(s.split())
-#     s=s.lower()
-    words = s.split()
-    return len(words)
-s = "Hello, World! Welcome to Python programming."
-print(count_words(s))
+# def count_words(s):
+# #     s="".join(s.split())
+# #     s=s.lower()
+#     words = s.split()
+#     return len(words)
+# s = "Hello, World! Welcome to Python programming."
+# print(count_words(s))
+
+def remove_duplicates(s):
+    lst=[]
+    for i in s:
+        if i not in lst:
+            lst.append(i)
+    return "".join(lst)
+
+
+s="Hello, World!"
+print(remove_duplicates(s))
