@@ -44,13 +44,24 @@
 # s = "Hello, World! Welcome to Python programming."
 # print(count_words(s))
 
-def remove_duplicates(s):
-    lst=[]
-    for i in s:
-        if i not in lst:
-            lst.append(i)
-    return "".join(lst)
+# def remove_duplicates(s):
+#     lst=[]
+#     for i in s:
+#         if i not in lst:
+#             lst.append(i)
+#     return "".join(lst)
 
 
-s="Hello, World!"
-print(remove_duplicates(s))
+# s="Hello, World!"
+# print(remove_duplicates(s))
+
+def no_of_consonants(str1):
+    str1=str1.lower()
+    str1=str1.replace(" ","")
+    count=0
+    for char in str1:
+        if char not in 'aeiou':
+            count += 1
+    return count
+str1="Python Programming"
+print(no_of_consonants(str1))
