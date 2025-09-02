@@ -40,21 +40,21 @@
 # print(n[:-1]+int(n[-1]))
 # print(int(n[-1]))
 
-def gcd(n, m):
+# def gcd(n, m):
  
-    if n < 0:
-        n = -n
-    if m < 0:
-        m = -m
+#     if n < 0:
+#         n = -n
+#     if m < 0:
+#         m = -m
 
 
-    if n == 0 and m == 0:
-        return 0
+#     if n == 0 and m == 0:
+#         return 0
 
     
-    while m != 0:
-        temp = n % m   # store the remainder
-        n = m          # assign old m to n
-        m = temp
-    return n
-print(gcd(48,18))  # Output: 6
+#     while m != 0:
+#         temp = n % m   # store the remainder
+#         n = m          # assign old m to n
+#         m = temp
+#     return n
+# print(gcd(48,18))  # Output: 6
