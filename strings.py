@@ -94,3 +94,13 @@
 # s = "hello world"
 # t = "worlds"
 # print(is_substring(s, t))
+
+def longest_word_length(s):
+    s=s.split()
+    max_length=0
+    for word in s:
+        max_length=max(len(word),max_length)
+    return max_length
+
+s = "The quick brown fox jumps over the lazy dog"
+print(longest_word_length(s))
