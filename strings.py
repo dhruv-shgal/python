@@ -84,3 +84,13 @@
 # s = "abcde"
 # t = "aec"
 # print(is_subsequence(s, t))
+
+# def is_substring(s, t):
+#     s=s.split()
+#     if t in s:
+#         return True
+#     return False
+
+# s = "hello world"
+# t = "worlds"
+# print(is_substring(s, t))
