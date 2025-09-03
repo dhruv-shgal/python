@@ -11,23 +11,26 @@
 #         else:
 #             r=mid-1
 #     count+=n-l
-# print(count)          
-def next_greatest_letter(letters, target):
-   l, r = 0, len(letters) - 1
-   while l <= r:
-            mid = l + (r - l) // 2
-            if letters[mid] <= target:
-                l = mid + 1
-            else:
-                r = mid - 1
+# print(count)        
+# 
+#   
+# def next_greatest_letter(letters, target):
+#    l, r = 0, len(letters) - 1
+#    while l <= r:
+#             mid = l + (r - l) // 2
+#             if letters[mid] <= target:
+#                 l = mid + 1
+#             else:
+#                 r = mid - 1
         
-   return letters[l] if l < len(letters) else letters[0]    
+#    return letters[l] if l < len(letters) else letters[0]    
 
 
         
 
 
 
-letters = ['c', 'f', 'j']
-target='d'
-print(next_greatest_letter(letters,target))
+# letters = ['c', 'f', 'j']
+# target='d'
+# print(next_greatest_letter(letters,target))
+
