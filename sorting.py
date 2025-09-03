@@ -16,14 +16,16 @@
 #     lst1[i],lst1[mini]=lst1[mini],lst1[i]
 # print(lst1)    
 
-def insertion_sort(lst1):
-    for i in range(len(lst1)):
-        j=i
-        while(j>0 and lst1[j-1]>lst1[j]):
-            lst1[j-1],lst1[j]=lst1[j],lst1[j-1]
-            j-=1
-    return lst1        
+#INSERTION SORT
+# def insertion_sort(lst1):
+#     for i in range(len(lst1)):
+#         j=i
+#         while(j>0 and lst1[j-1]>lst1[j]):
+#             lst1[j-1],lst1[j]=lst1[j],lst1[j-1]
+#             j-=1
+#     return lst1        
 
 
-lst1=[12 ,25 ,11 ,34 ,90,22]
-print(insertion_sort(lst1))
+# lst1=[12 ,25 ,11 ,34 ,90,22]
+# print(insertion_sort(lst1))
+
