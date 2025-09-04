@@ -88,17 +88,28 @@
 # nums=[4,5,6,7,0,1,2]    
 # print(findMin(nums))
 
-def search(nums, target):
-    l=0
-    h=len(nums)-1
-    while(l<=h):
+def bs(nums,l,h,target):
+    while l<=h:
         mid=l+(h-l)//2
         if nums[mid]==target:
             return mid
-        if nums[mid]>nums[l]:
+        elif nums[mid]>target:
             h=mid-1
         else:
-            l=mid+1
+            l=mid+1    
+
+def indx(nums):
+    return nums.index(min(nums))          
+def search(nums, target):
+    l=0
+    h=len(nums)-1
+    ind=indx(nums)
+    bs1=bs(nums,nums[0],ind,target)
+    bs2=bs(nums,nums[ind],len(nums)-1,target)
+    if target == nums[bs1]:
+        return bs1
+    else:
+        return bs2
 
 nums = [4, 5, 6, 7, 0, 1, 2]   
 target=0 
