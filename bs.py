@@ -95,11 +95,11 @@ def search(nums, target):
         mid=l+(h-l)//2
         if nums[mid]==target:
             return mid
-        elif nums[mid]>target:
-            l=mid+1
-        else:
+        if nums[mid]>nums[l]:
             h=mid-1
+        else:
+            l=mid+1
 
 nums = [4, 5, 6, 7, 0, 1, 2]   
 target=0 
-print(search(nums.target))
+print(search(nums,target))
