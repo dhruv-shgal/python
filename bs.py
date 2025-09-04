@@ -34,3 +34,39 @@
 # target='d'
 # print(next_greatest_letter(letters,target))
 
+def searchRange(nums, target):
+    l=0
+    h=len(nums)-1
+    res=-1
+    while(l<=h):
+        mid=l+(h-l)//2
+        if nums[mid]==target:
+            res=mid
+            h=mid-1
+        elif nums[mid]<target:
+            l=mid+1
+        else:
+            h=mid-1
+    return res        
+def last_index(nums,target):
+    l=0
+    h=len(nums)-1
+    res1=-1
+    while(l<=h):
+        mid=l+(h-l)//2
+        if nums[mid]==target:
+            res1=mid
+            l=mid+1
+        elif nums[mid]<target:
+            l=mid+1
+        else:
+            h=mid-1
+    return res1  
+    
+
+
+nums=[5,7,7,8,8,10]
+target=8
+first=searchRange(nums,target)
+last=last_index(nums,target)
+print(f"Number = {target}, the first index is {first} and the last index is {last}")
