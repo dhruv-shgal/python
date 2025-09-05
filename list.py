@@ -32,5 +32,5 @@ def plusone(lst):
         i+=1    
     return lst[::-1]                
 
-lst=[5,4,5,9]
+lst=[5,9,9,9]
 print(plusone(lst))
