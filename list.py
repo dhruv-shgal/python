@@ -7,9 +7,10 @@
 # print(is_palindrome(lst))
 
 def rotate_array(arr,d):
-    arr=arr[d:]+arr[:d]
-    d = d % len(arr)
-    arr = arr[-d:] + arr[:-d]
+    # arr=arr[d:]+arr[:d]
+    # d = d % len(arr)
+    # arr = arr[-d:] + arr[:-d]
+    # return arr
     return arr
 arr=[1, 2, 3, 4, 5]
 d=2
