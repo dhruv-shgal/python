@@ -73,17 +73,30 @@
 # nums2 = [9, 4, 9,8,4]
 # print(intersection(nums1,nums2))
 
-def find_max_consecutive_ones(nums):
-    cnt=0
-    max_cnt=0
-    for i in nums:
-        if i==1:
-            cnt+=1
-            max_cnt=max(cnt,max_cnt)
-        else:
-            cnt=0
-    return cnt
+# def find_max_consecutive_ones(nums):
+#     cnt=0
+#     max_cnt=0
+#     for i in nums:
+#         if i==1:
+#             cnt+=1
+#             max_cnt=max(cnt,max_cnt)
+#         else:
+#             cnt=0
+#     return cnt
         
 
-nums = [1, 0, 1, 1, 0, 1, 1, 1, 1]    
-print(find_max_consecutive_ones(nums))
+# nums = [1, 0, 1, 1, 0, 1, 1, 1, 1]    
+# print(find_max_consecutive_ones(nums))
+
+def max_subarray_sum(arr):
+    currsum=0
+    maxsum=arr[0]
+    for i in arr:
+        if currsum<0:
+            currrsum=0
+        currsum+=i
+        maxsum=max(maxsum,currsum)
+    return maxsum        
+
+
+arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
