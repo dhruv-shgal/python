@@ -36,13 +36,20 @@
 # print(plusone(lst))
 
 
-def find_missing_number(nums):
-    xor1,xor2=0,0
-    n=len(nums)-1
-    for i in range(n):
-        xor2=xor2^nums[i]
-        xor1=xor1^(i+1)
-    xor1=xor1^n
-    return xor1^xor2    
-nums = [3, 0, 1]
-print(find_missing_number(nums))
+# def find_missing_number(nums):
+#     xor1,xor2=0,0
+#     n=len(nums)-1
+#     for i in range(n):
+#         xor2=xor2^nums[i]
+#         xor1=xor1^(i+1)
+#     xor1=xor1^n
+#     return xor1^xor2    
+# nums = [3, 0, 1]
+# print(find_missing_number(nums))
+
+def is_sorted(arr):
+    return sorted(arr)==arr
+
+
+arr = [1, 2, 3, 4, 5]
+print(is_sorted(arr))
