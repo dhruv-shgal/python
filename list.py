@@ -93,10 +93,11 @@ def max_subarray_sum(arr):
     maxsum=arr[0]
     for i in arr:
         if currsum<0:
-            currrsum=0
+            currsum=0
         currsum+=i
         maxsum=max(maxsum,currsum)
     return maxsum        
 
 
 arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+print(max_subarray_sum(arr))
