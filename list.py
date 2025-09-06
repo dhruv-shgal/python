@@ -55,12 +55,35 @@
 # print(is_sorted(arr))
 
 
-def move_zeroes(nums):
-    j=0
-    for i in range(len(nums)):
-        if nums[i]!=0:
-           nums[i],nums[j]=nums[j],nums[i]
-           j+=1
-    return nums           
-nums = [0, 1, 0, 3, 12]
-print(move_zeroes(nums))
+# def move_zeroes(nums):
+#     j=0
+#     for i in range(len(nums)):
+#         if nums[i]!=0:
+#            nums[i],nums[j]=nums[j],nums[i]
+#            j+=1
+#     return nums           
+# nums = [0, 1, 0, 3, 12]
+# print(move_zeroes(nums))
+
+
+# def intersection(nums1, nums2):
+#         return list(set(nums1) & set(nums2))
+#         return []
+# nums1 = [1, 65, 5]
+# nums2 = [9, 4, 9,8,4]
+# print(intersection(nums1,nums2))
+
+def find_max_consecutive_ones(nums):
+    cnt=0
+    max_cnt=0
+    for i in nums:
+        if i==1:
+            cnt+=1
+            max_cnt=max(cnt,max_cnt)
+        else:
+            cnt=0
+    return cnt
+        
+
+nums = [1, 0, 1, 1, 0, 1, 1, 1, 1]    
+print(find_max_consecutive_ones(nums))
