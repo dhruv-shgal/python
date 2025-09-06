@@ -16,21 +16,30 @@
 # d=2
 # print(rotate_array(arr,d))
 
-def plusone(lst):
-    lst=lst[::-1]
-    one,i=1,0
-    while one:
-        if i<len(lst):
-            if lst[i]==9:
-                lst[i]=0
-            else:    
-                lst[i]+=1
-                one=0
-        else:
-            lst.append(1)
-            one=0
-        i+=1    
-    return lst[::-1]                
+# def plusone(lst):
+#     lst=lst[::-1]
+#     one,i=1,0
+#     while one:
+#         if i<len(lst):
+#             if lst[i]==9:
+#                 lst[i]=0
+#             else:    
+#                 lst[i]+=1
+#                 one=0
+#         else:
+#             lst.append(1)
+#             one=0
+#         i+=1    
+#     return lst[::-1]                
 
-lst=[5,9,9,9]
-print(plusone(lst))
+# lst=[5,9,9,9]
+# print(plusone(lst))
+
+
+def find_missing_number(nums):
+    for i in range(len(nums)):
+        if i not in nums[i]:
+            return i
+    return -1
+nums = [3, 0, 1]
+print(find_missing_number(nums))
