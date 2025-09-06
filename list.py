@@ -37,9 +37,12 @@
 
 
 def find_missing_number(nums):
-    for i in range(len(nums)):
-        if i not in nums[i]:
-            return i
-    return -1
+    xor1,xor2=0,0
+    n=len(nums)-1
+    for i in range(n):
+        xor2=xor2^nums[i]
+        xor1=xor1^(i+1)
+    xor1=xor1^n
+    return xor1^xor2    
 nums = [3, 0, 1]
 print(find_missing_number(nums))
