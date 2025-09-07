@@ -60,7 +60,7 @@ n=int(input("enter the side of square"))
 #for i in range(n):
 
 #    for j in range(n-i-1):
-        print(" ",end="")
+ #       print(" ",end="")
     for k in range(1,i+1):
         print(k,end=" ")
     
