@@ -1,6 +1,4 @@
-# def cel_to_fah(celsius):
-#     f=(9/5 * celsius)+32
-#     return f
+
 
 
 def rounds_lift(n,c) :
