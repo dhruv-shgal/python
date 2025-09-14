@@ -17,5 +17,5 @@
 
 # def reverse_sent(s):
 
-s="the sky is blue"
-print(" ".join(s.split()[::-1]))    
+# s="the sky is blue"
+# print(" ".join(s.split()[::-1]))    
