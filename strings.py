@@ -102,5 +102,5 @@ def longest_word_length(s):
         max_length=max(len(word),max_length)
     return max_length
 
-s = "The quick brown fox jumps over the lazy dog"
-print(longest_word_length(s))
+#s = "The quick brown fox jumps over the lazy dog"
+#print(longest_word_length(s))
