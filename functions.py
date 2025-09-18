@@ -7,3 +7,4 @@ def rounds_lift(n,c) :
     else: 
         return n//c + 1
 print(rounds_lift(7,4)) 
+
