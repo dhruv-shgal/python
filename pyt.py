@@ -13,4 +13,4 @@
 #     x=num
 # print(global_(5))    
 
-print(0 or 2)
+# print(0 or 2)
