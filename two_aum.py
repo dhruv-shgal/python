@@ -10,11 +10,13 @@ target = 7
 # OPTIMAL APPROACH
 
 # by using a hashmap
-prevmap={}
-for i,n in enumerate(nums):
-    diff=target-n
-    if diff in prevmap:
-        print([prevmap[diff],i])
-    prevmap[n]=i
+# prevmap={}
+# for i,n in enumerate(nums):
+#     diff=target-n
+#     if diff in prevmap:
+#         print([prevmap[diff],i])
+#     prevmap[n]=i
+
+
 
 
