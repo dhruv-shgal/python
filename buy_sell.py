@@ -1,5 +1,5 @@
 #maximum profit - buy and sell stocks
-def profit():
+# def profit():
     # prices = [7,1,5,3,6,4]
     # l,r=0,1
     # maxprofit=0
