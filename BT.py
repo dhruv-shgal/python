@@ -18,4 +18,14 @@ a.right=c
 b.left=d
 b.right=e
 
-print(a)
+# print(a)
+
+def preorder(node):
+    if node is None:
+        return
+    print(node) 
+    preorder(node.left)
+    preorder(node.right)
+
+
+preorder(a)
