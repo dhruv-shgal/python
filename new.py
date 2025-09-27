@@ -9,4 +9,4 @@
 # test2='test2'
 # print(f"{test2:10.3}")
 
-print('{0:b}'.format(52)) # x for hex , o for oct
+# print('{0:b}'.format(52)) # x for hex , o for oct
