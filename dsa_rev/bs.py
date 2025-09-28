@@ -2,13 +2,13 @@ def last_occ(arr,target):
     l=0
     h=len(arr)-1
     res=-1
-    while l<h:
+    while l<=h:
         mid=(l+h)//2
         
-        if mid==target:
+        if arr[mid]==target:
             res=mid
             l=mid+1
-        elif mid>target:
+        elif arr[mid]>target:
             h=mid-1
         else:
             l=mid+1                
@@ -18,7 +18,7 @@ def first_occ(arr,target):
     l=0
     h=len(arr)-1
     res=-1
-    while l<h:
+    while l<=h:
         mid=(l+h)//2
         
         if arr[mid]==target:
