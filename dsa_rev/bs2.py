@@ -3,12 +3,14 @@ def no_sorted(arr):
     n=len(arr)
     h=len(arr)-1
     while l<=h:
+        if arr[l] <= arr[h]:
+            return l
         mid=(l+h)//2
         next=(mid+1)%n
         prev=(mid+n-1)%n
         if arr[mid]<=arr[prev] and arr[mid]<=arr[next]:
             return mid
-        elif arr[l]<=arr[mid]:
+        if arr[l]<=arr[mid]:
             l=mid+1
         else:
             h=mid-1
