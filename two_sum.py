@@ -1,6 +1,6 @@
 #BRUTE FORCE
-nums = [3,4,5,6]
-target = 7
+# nums = [3,4,5,6]
+# target = 7
 # for i in nums:
 #     for j in nums:
 #         if i+j == target:
